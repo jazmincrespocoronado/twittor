@@ -1,7 +1,12 @@
-
+//Validacion para los / de raiz
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
 // Poner estas lineas para instalar el sw
 if (navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+    if(url.includes('localhost')){
+        swLocation = '/sw.js'
+    }
+    navigator.serviceWorker.register(swLocation);
 }
 
 

@@ -10,7 +10,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';/*aqui se pone cuando no se va a modifica
 //Declarar arreglo appshell (estatico), va a contener todo lo que es necesario para la app
 // lo que nosotros hicimos, no enlaces externos es decir hechas por terceros.
 const APP_SHELL = [
-        '/', //Esta siempre va, es necearia
+        //'/', //Esta siempre va, es necearia
         'index.html',
         'css/style',
         'img/favicon.ico',
